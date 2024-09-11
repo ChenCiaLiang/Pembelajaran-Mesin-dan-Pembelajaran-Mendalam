@@ -4,7 +4,7 @@ import pickle
 import os
 
 #load model
-model_directory = r'C:\Users\Lenovo\OneDrive\Documents\K\S 5\PMdPM\Pembelajaran-Mesin-dan-Pembelajaran-Mendalam\rf_diabetes_model.pkl' ##diisi dengan path folder dimana file model berada
+model_directory = r'C:\Users\Lenovo\OneDrive\Documents\K\S 5\PMdPM\Pembelajaran-Mesin-dan-Pembelajaran-Mendalam' ##diisi dengan path folder dimana file model berada
 
 # Gunakan os.path.join() untuk menggabungkan direktori dan file model pickle
 model_path = os.path.join(model_directory, 'rf_diabetes_model.pkl')
@@ -34,8 +34,7 @@ if os.path.exists(model_path):
         
         #prediksi diabetes berdasarkan input
 
-        input_data = [[pregnancies, glucose, bloodPressure, skinThickness, insulin, bmi,
-                        diabetesPedigreeFunction, age]]
+        input_data = [[pregnancies, glucose, bloodPressure, skinThickness, insulin, bmi, diabetesPedigreeFunction, age]]
         
         if st.button("Prediksi!"):
             rf_model_prediction = rf_model.predict(input_data)
