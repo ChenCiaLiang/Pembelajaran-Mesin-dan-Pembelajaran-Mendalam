@@ -1,0 +1,1 @@
+Error bang, gabisa di deploy, aku dah coba bikin file requirements.txt seperti di modul tugas 1 masih gabisa. tapi kalo run "streamlit run" bisa jalan
