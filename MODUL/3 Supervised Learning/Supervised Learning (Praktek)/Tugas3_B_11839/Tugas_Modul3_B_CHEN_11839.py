@@ -115,7 +115,7 @@ if uploaded_file is not None:
         input_data_selected = feature_selector.transform(input_data_scaled)
 
         if st.sidebar.button("Prediksi!"):
-            SVR_model_predict = SVR_model_predict(input_data_selected)
+            SVR_model_predict = SVR_model.predict(input_data_selected)
             st.markdown(f"<h3 style='text-align: center; color: #4CAF50;'>Prediksi IPK adalah: {SVR_model_predict[0]:.2f}</h3>", unsafe_allow_html=True)
     else:
         st.error("Model tidak ditemukan, silahkan cek file model di direktori.")
