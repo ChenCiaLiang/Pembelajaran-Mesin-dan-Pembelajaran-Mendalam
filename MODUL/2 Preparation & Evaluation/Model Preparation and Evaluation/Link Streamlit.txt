@@ -1,1 +1,0 @@
-Contoh streamlit yang sudah jadi : https://tugas-2-machine-learning-mariapangrib98.streamlit.app/
